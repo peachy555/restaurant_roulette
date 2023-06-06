@@ -7,18 +7,14 @@
 <body>
   <h1>Restaurant Roulette</h1>
 
-  <div id="filter">
-    <h2>Filter by Attributes:</h2>
-    <!-- Add checkboxes or dropdown menus for attributes -->
-    <!-- Example: <input type="checkbox" id="attribute1" value="attribute1"> Attribute 1 -->
-  </div>
+  <label for="tags">Select Tags:</label>
+  <select id="tags" multiple>
+    <!-- Populate the dropdown with tags dynamically -->
+  </select>
 
   <button onclick="startRoulette()">Start Roulette</button>
 
-  <div id="result">
-    <h2>Selected Restaurant:</h2>
-    <p id="restaurant"></p>
-  </div>
+  <a href="restaurant-list.html">Restaurant List</a>
 
   <script src="script.js"></script>
 </body>
