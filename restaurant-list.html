@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Restaurant List</h1>
+
+  <h2>Add New Restaurant:</h2>
+  <input type="text" id="newRestaurantInput" placeholder="Restaurant Name">
+  <button onclick="addNewRestaurant()">New Restaurant</button>
+
+  <h2>Add New Tag:</h2>
+  <input type="text" id="newTagInput" placeholder="Tag Name">
+  <button onclick="addNewTag()">New Tag</button>
+
+  <h2>Tag Existing Restaurant:</h2>
+  <select id="existingRestaurantDropdown">
+    <!-- Restaurants will be populated dynamically -->
+  </select>
+  <select id="existingTagDropdown">
+    <!-- Tags will be populated dynamically -->
+  </select>
+  <button onclick="tagRestaurant()">Tag Restaurant</button>
+
+  <h2>Delete Restaurant:</h2>
+  <select id="deleteRestaurantDropdown">
+    <!-- Restaurants will be populated dynamically -->
+  </select>
+  <button onclick="deleteRestaurant()">Delete</button>
+
+  <h2>List of Restaurants:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Restaurant</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody id="restaurantTableBody">
+      <!-- Restaurants will be populated dynamically -->
+    </tbody>
+  </table>
+
+  <h2>List of Tags:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tag</th>
+      </tr>
+    </thead>
+    <tbody id="tagTableBody">
+      <!-- Tags will be populated dynamically -->
+    </tbody>
+  </table>
+
+  <a href="index.html">Back to Main</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
