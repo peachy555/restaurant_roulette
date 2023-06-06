@@ -65,4 +65,4 @@ This project was inspired by the need to choose a restaurant for meetups in a fu
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to us at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions, suggestions, or feedback, please feel free to reach out to us at [peach.tuntiwong@gmail.com](mailto:peach.tuntiwong@gmail.com).
