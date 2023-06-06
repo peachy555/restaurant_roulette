@@ -7,7 +7,7 @@ Restaurant Roulette is a web-based game designed to help you and your friends se
 To set up and run the restaurant roulette game locally on your computer, follow these steps:
 
 1. Clone the repository to your local machine: 
-git clone https://github.com/your-username/restaurant-roulette.git
+git clone https://github.com/peachy555/restaurant-roulette.git
 
 2. Open the project folder.
 
