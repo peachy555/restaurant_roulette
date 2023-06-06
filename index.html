@@ -9,12 +9,19 @@
 
   <div id="filter">
     <h2>Filter by Tags:</h2>
-    <select id="tagDropdown"></select>
+    <select id="tagDropdown">
+      <!-- Tags will be populated dynamically -->
+    </select>
   </div>
 
   <button onclick="startRoulette()">Start Roulette</button>
 
-  <a href="restaurantList.html">Restaurant List</a>
+  <div id="result">
+    <h2>Selected Restaurant:</h2>
+    <p id="restaurant"></p>
+  </div>
+
+  <a href="restaurant-list.html">Restaurant List</a>
 
   <script src="script.js"></script>
 </body>
