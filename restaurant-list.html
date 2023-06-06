@@ -7,27 +7,36 @@
 <body>
   <h1>Restaurant List</h1>
 
-  <div>
-    <input type="text" id="newRestaurant" placeholder="Enter new restaurant">
-    <button onclick="addRestaurant()">New Restaurant</button>
+  <div id="newRestaurant">
+    <h2>Add a New Restaurant:</h2>
+    <input type="text" id="newRestaurantInput" placeholder="Restaurant Name">
+    <button onclick="addRestaurant()">Add</button>
   </div>
 
-  <div>
-    <input type="text" id="newTag" placeholder="Enter new tag">
-    <button onclick="addTag()">New Tag</button>
+  <div id="newTag">
+    <h2>Add a New Tag:</h2>
+    <input type="text" id="newTagInput" placeholder="Tag Name">
+    <button onclick="addTag()">Add</button>
   </div>
 
-  <div>
-    <select id="existingRestaurant">
-      <!-- Populate the dropdown with existing restaurants dynamically -->
-    </select>
-    <select id="existingTag">
-      <!-- Populate the dropdown with existing tags dynamically -->
-    </select>
+  <div id="tagRestaurant">
+    <h2>Tag a Restaurant:</h2>
+    <select id="restaurantDropdown"></select>
+    <select id="tagDropdown"></select>
     <button onclick="tagRestaurant()">Tag Restaurant</button>
   </div>
 
-  <button onclick="deleteRestaurant()">Delete Restaurant</button>
+  <div id="deleteRestaurant">
+    <h2>Delete a Restaurant:</h2>
+    <select id="deleteRestaurantDropdown"></select>
+    <button onclick="deleteRestaurant()">Delete</button>
+  </div>
+
+  <h2>List of Restaurants:</h2>
+  <table id="restaurantTable"></table>
+
+  <h2>List of Tags:</h2>
+  <table id="tagTable"></table>
 
   <script src="script.js"></script>
 </body>
