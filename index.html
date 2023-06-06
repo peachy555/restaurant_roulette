@@ -6,23 +6,33 @@
 </head>
 <body>
   <h1>Restaurant Roulette</h1>
-
-  <div id="filter">
-    <h2>Filter by Tags:</h2>
+  
+  <div>
+    <label for="tagDropdown">Select Tag:</label>
     <select id="tagDropdown">
-      <!-- Tags will be populated dynamically -->
+      <option value="">All</option>
+      <!-- Add options for tags here -->
+      <option value="Italian">Italian</option>
+      <option value="Asian">Asian</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <!-- Add more tags as needed -->
     </select>
   </div>
-
-  <button onclick="startRoulette()">Start Roulette</button>
-
-  <div id="result">
-    <h2>Selected Restaurant:</h2>
-    <p id="restaurant"></p>
-  </div>
-
-  <a href="restaurant-list.html">Restaurant List</a>
-
+  
+  <button id="startButton" onclick="startRoulette()">Start Roulette</button>
+  
+  <table id="restaurantTable">
+    <thead>
+      <tr>
+        <th>Restaurant</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Add rows dynamically using JavaScript -->
+    </tbody>
+  </table>
+  
   <script src="script.js"></script>
 </body>
 </html>
