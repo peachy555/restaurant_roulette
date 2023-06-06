@@ -1,8 +1,8 @@
 // Array to store the list of restaurants
-var restaurants = [];
+var restaurants = ["Momo Paradise"];
 
 // Array to store the list of tags
-var tags = [];
+var tags = ["Shabu Shabu"];
 
 // Function to start the roulette
 function startRoulette() {
