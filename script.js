@@ -107,3 +107,35 @@ function populateRestaurantTable() {
   restaurants.forEach(function (restaurant) {
     var row = document.createElement("tr");
 
+    var nameCell = document.createElement("td");
+    nameCell.textContent = restaurant.name;
+    row.appendChild(nameCell);
+
+    var tagsCell = document.createElement("td");
+    tagsCell.textContent = restaurant.tags.join(", ");
+    row.appendChild(tagsCell);
+
+    restaurantTableBody.appendChild(row);
+  });
+}
+
+// Function to populate the tag table
+function populateTagTable() {
+  var tagTableBody = document.getElementById("tagTableBody");
+  tagTableBody.innerHTML = "";
+
+  tags.forEach(function (tag) {
+    var row = document.createElement("tr");
+
+    var tagCell = document.createElement("td");
+    tagCell.textContent = tag;
+    row.appendChild(tagCell);
+
+    tagTableBody.appendChild(row);
+  });
+}
+
+// Populate the initial dropdowns and tables
+populateDropdowns();
+populateRestaurantTable();
+populateTagTable();
