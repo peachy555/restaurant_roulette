@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Restaurant List</h1>
+
+  <div>
+    <input type="text" id="newRestaurant" placeholder="Enter new restaurant">
+    <button onclick="addRestaurant()">New Restaurant</button>
+  </div>
+
+  <div>
+    <input type="text" id="newTag" placeholder="Enter new tag">
+    <button onclick="addTag()">New Tag</button>
+  </div>
+
+  <div>
+    <select id="existingRestaurant">
+      <!-- Populate the dropdown with existing restaurants dynamically -->
+    </select>
+    <select id="existingTag">
+      <!-- Populate the dropdown with existing tags dynamically -->
+    </select>
+    <button onclick="tagRestaurant()">Tag Restaurant</button>
+  </div>
+
+  <button onclick="deleteRestaurant()">Delete Restaurant</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
